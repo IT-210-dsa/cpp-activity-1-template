@@ -1,0 +1,25 @@
+#include <stdio.h>
+
+int main() {
+    char name[50];
+    float quiz1, quiz2, quiz3, average;
+
+    printf("Enter Student Name: ");
+    scanf("%s", name);
+
+    printf("Enter Quiz 1: ");
+    scanf("%f", &quiz1);
+
+    printf("Enter Quiz 2: ");
+    scanf("%f", &quiz2);
+
+    printf("Enter Quiz 3: ");
+    scanf("%f", &quiz3);
+
+    average = (quiz1 + quiz2 + quiz3) / 3;
+
+    printf("\nStudent Name: %s\n", name);
+    printf("Quiz Average: %.2f\n", average);
+
+    return 0;
+}
